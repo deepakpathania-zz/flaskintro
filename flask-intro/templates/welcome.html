@@ -10,6 +10,9 @@
 <div class="container">
 <h1>Welcome to Flask Intro</h1>
 <p> Click <a href='/'>here</a> to go home</p>
+{% for message in get_flashed_messages() %}
+        {{ message }}
+        {% endfor %}
 </div>
 </body>
 </html>
